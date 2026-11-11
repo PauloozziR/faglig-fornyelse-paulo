@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "faglig-fornyelse-paulo/1.0.0": {
+        "runtime": {
+          "faglig-fornyelse-paulo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "faglig-fornyelse-paulo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
