@@ -11,8 +11,8 @@ namespace ChooseYourOwnAdventure
             /* THE MYSTERIOUS NOISE */
             
             Console.Write("What is your name?: ");
-            string name = Console.ReadLine();
-            Console.WriteLine($"Hello, {name}! Welcome to our story.");
+            string playerName = Console.ReadLine();
+            Console.WriteLine($"Hello, {playerName}! Welcome to our story.");
 
             Console.WriteLine("It begins on a cold rainy night. You're sitting in your room and hear a noise coming from down the hall. Do you go investigate?");
             Console.Write("Type YES or NO: ");
@@ -20,34 +20,92 @@ namespace ChooseYourOwnAdventure
 
             if (firstChoice == "NO")
             {
-                /* Console.WriteLine("You are too scared to check out the noise and cower in fear under the bedsheets all night. THE END!"); */
                 Console.WriteLine("You decide adventure can wait another day ignoring the noise and instead invite the ghost thats been haunting your room to a game of rock paper scissors.");
-                Console.Write("Select an option by typing ROCK, PAPER or SCISSORS: ");
-                string rpsChoice = Console.ReadLine().ToUpper();
-                string[] options = { "ROCK", "PAPER", "SCISSORS"};
-                int ghostChoice = new Random().Next(0, 3); // det lave tal er inklusivt mens det høje tal er ekslusivt så denne linje rammer 0-2
-                string ghostChoiceString = options[ghostChoice];
-                Console.WriteLine($"You selected {rpsChoice}. The ghost selected {ghostChoiceString}.");
+                Random random = new Random();
+                bool playAgain = true;
+                string playerChoice;
+                string ghostChoice;
+                while (playAgain)
+                {
+                    playerChoice = "";
+                    ghostChoice = "";
+                    while (playerChoice != "ROCK" && playerChoice != "PAPER" && playerChoice != "SCISSORS")
+                    {
+                        Console.Write("Select an option ROCK, PAPER or SCISSORS: ");
+                        playerChoice = Console.ReadLine().ToUpper();
+                    }
 
-                if (rpsChoice == ghostChoiceString)
-                {
-                    Console.WriteLine("Its a tie!");
-                }
-                else if (rpsChoice == "ROCK" && ghostChoiceString == "SCISSORS")
-                {
-                    Console.WriteLine("You win!");
-                }
-                else if (rpsChoice == "PAPER" && ghostChoiceString == "ROCK")
-                {
-                    Console.WriteLine("You win!");
-                }
-                else if (rpsChoice == "SCISSORS" && ghostChoiceString == "PAPER")
-                {
-                    Console.WriteLine("You win!");
-                }
-                else
-                {
-                    Console.WriteLine("You lose!");
+                    switch (random.Next(1, 4)) // med Next() kan man sætte en range af tal den kan random imellem det lave tal er inklusivt men det høje tal er esklusivt så denne kode vil random 1-3
+                    {
+                        case 1:
+                            ghostChoice = "ROCK";
+                            break;
+                        case 2:
+                            ghostChoice = "PAPER";
+                            break;
+                        case 3:
+                            ghostChoice = "SCISSORS";
+                            break;
+                    }
+                    Console.WriteLine($"You selected {playerChoice}. The ghost selected {ghostChoice}.");
+
+                    switch (playerChoice)
+                    {
+                        case "ROCK":
+                            if (ghostChoice == "ROCK")
+                            {
+                                Console.WriteLine("Its a tie!");
+                            }
+                            else if (ghostChoice == "PAPER")
+                            {
+                                Console.WriteLine("You lose!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("You win!");
+                            }
+                            break;
+                        case "PAPER":
+                            if (ghostChoice == "ROCK")
+                            {
+                                Console.WriteLine("You win!");
+                            }
+                            else if (ghostChoice == "PAPER")
+                            {
+                                Console.WriteLine("Its a tie!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("You lose!");
+                            }
+                            break;
+                        case "SCISSORS":
+                            if (ghostChoice == "ROCK")
+                            {
+                                Console.WriteLine("You lose!");
+                            }
+                            else if (ghostChoice == "PAPER")
+                            {
+                                Console.WriteLine("You win!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Its a tie!");
+                            }
+                            break;
+                    }
+
+                    Console.WriteLine("Would you like to play again (Y/N): ");
+                    string answer = Console.ReadLine().ToUpper();
+                    if (answer == "Y")
+                    {
+                        playAgain = true;
+                    }
+                    else
+                    {
+                        playAgain = false;
+                        Console.WriteLine("THE END.");
+                    }
                 }
             }
             else if (firstChoice == "YES")

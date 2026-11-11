@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("faglig-fornyelse-paulo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fcbf28e0944136447883775e71bd13c23165f65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5568726d0fc806ff7691a65be60359105d9fe7ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("faglig-fornyelse-paulo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("faglig-fornyelse-paulo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
