@@ -1,0 +1,15 @@
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\bin\Debug\net10.0\faglig-fornyelse-paulo.exe
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\bin\Debug\net10.0\faglig-fornyelse-paulo.deps.json
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\bin\Debug\net10.0\faglig-fornyelse-paulo.runtimeconfig.json
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\bin\Debug\net10.0\faglig-fornyelse-paulo.dll
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\bin\Debug\net10.0\faglig-fornyelse-paulo.pdb
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.AssemblyInfoInputs.cache
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.AssemblyInfo.cs
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.csproj.CoreCompileInputs.cache
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.sourcelink.json
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.dll
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\refint\faglig-fornyelse-paulo.dll
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.pdb
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\faglig-fornyelse-paulo.genruntimeconfig.cache
+C:\Users\U2535498\rts-opgaver\faglig-fornyelse\faglig-fornyelse-paulo\obj\Debug\net10.0\ref\faglig-fornyelse-paulo.dll
