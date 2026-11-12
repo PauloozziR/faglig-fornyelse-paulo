@@ -17,7 +17,7 @@ Tutorial til et choose your own adventure og et rock paper scissors mini game
 
 i dette eksempel laver vi en console app
 For at starte dit c# projekt installere vi en extensions med navnet C# Dev Kit og derefter kan vi starte et nyt projekt som console app(.NET Core) eller hvis vi har en projekt mappe klar kan vi skrive i konsollen:
-    dotnet new console -o (projekt navn eller . hvis mappen er åben i vs code)
+dotnet new console -o (projekt navn eller . hvis mappen er åben i vs code)
 
 inde i program.cs bruger vi namespace som sætter scope og hjælper med at organisere
 linjen under class program er en metode
