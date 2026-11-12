@@ -6,9 +6,11 @@ namespace ChooseYourOwnAdventure
     {
         static void Main(string[] args)
         {
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Clear();
 
-            /* THE MYSTERIOUS NOISE */
+            /* THE MYSTERIOUS NOISE AND THE FRIENDLY BEDROOM GUEST */
             
             Console.Write("What is your name?: ");
             string playerName = Console.ReadLine();
@@ -27,6 +29,7 @@ namespace ChooseYourOwnAdventure
                 string ghostChoice;
                 while (playAgain)
                 {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     playerChoice = "";
                     ghostChoice = "";
                     while (playerChoice != "ROCK" && playerChoice != "PAPER" && playerChoice != "SCISSORS")
@@ -54,42 +57,51 @@ namespace ChooseYourOwnAdventure
                         case "ROCK":
                             if (ghostChoice == "ROCK")
                             {
+                                Console.ForegroundColor = ConsoleColor.Yellow;
                                 Console.WriteLine("Its a tie!");
                             }
                             else if (ghostChoice == "PAPER")
                             {
+                                Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("You lose!");
                             }
                             else
                             {
+                                Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine("You win!");
                             }
                             break;
                         case "PAPER":
                             if (ghostChoice == "ROCK")
                             {
+                                Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine("You win!");
                             }
                             else if (ghostChoice == "PAPER")
                             {
+                                Console.ForegroundColor = ConsoleColor.Yellow;
                                 Console.WriteLine("Its a tie!");
                             }
                             else
                             {
+                                Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("You lose!");
                             }
                             break;
                         case "SCISSORS":
                             if (ghostChoice == "ROCK")
                             {
+                                Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("You lose!");
                             }
                             else if (ghostChoice == "PAPER")
                             {
+                                Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine("You win!");
                             }
                             else
                             {
+                                Console.ForegroundColor = ConsoleColor.Yellow;
                                 Console.WriteLine("Its a tie!");
                             }
                             break;
