@@ -6,16 +6,13 @@ namespace ChooseYourOwnAdventure
     {
         static void Main(string[] args)
         {
-            Console.ResetColor();
+            /* THE MYSTERIOUS NOISE AND THE FRIENDLY BEDROOM GUEST */
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Clear();
-
-            /* THE MYSTERIOUS NOISE AND THE FRIENDLY BEDROOM GUEST */
             
             Console.Write("What is your name?: ");
             string playerName = Console.ReadLine();
             Console.WriteLine($"Hello, {playerName}! Welcome to our story.");
-
             Console.WriteLine("It begins on a cold rainy night. You're sitting in your room and hear a noise coming from down the hall. Do you go investigate?");
             Console.Write("Type YES or NO: ");
             string firstChoice = Console.ReadLine().ToUpper();
@@ -27,11 +24,13 @@ namespace ChooseYourOwnAdventure
                 bool playAgain = true;
                 string playerChoice;
                 string ghostChoice;
+
                 while (playAgain)
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     playerChoice = "";
                     ghostChoice = "";
+
                     while (playerChoice != "ROCK" && playerChoice != "PAPER" && playerChoice != "SCISSORS")
                     {
                         Console.Write("Select an option ROCK, PAPER or SCISSORS: ");
@@ -109,6 +108,7 @@ namespace ChooseYourOwnAdventure
 
                     Console.WriteLine("Would you like to play again (Y/N): ");
                     string answer = Console.ReadLine().ToUpper();
+
                     if (answer == "Y")
                     {
                         playAgain = true;
@@ -133,6 +133,7 @@ namespace ChooseYourOwnAdventure
                     Console.WriteLine("\"Poor people have it. Rich people need it. If you eat it, you die. What is it?\"");
                     Console.Write("Type your answer: ");
                     string riddleAnswer = Console.ReadLine().ToUpper();
+
                     if (riddleAnswer == "NOTHING")
                     {
                         Console.WriteLine("The door opens and NOTHING is there. You turn off the light and run back to your room and lock the door");
@@ -156,23 +157,16 @@ namespace ChooseYourOwnAdventure
                             Console.WriteLine("You choose the first key. Lucky choice! The door opens with a chilling creek but NOTHING is there. Strange...");
                             Console.WriteLine("THE END.");
                             break;
-
                         case "2":
                             Console.WriteLine("You choose the second key. The door doesn't open.");
                             Console.WriteLine("THE END.");
                             break;
-
                         case "3":
                             /* Console.WriteLine("You choose the third key. The door opens to a dark room! Your curiosity takes over but the moment you step inside the door slams behind you! Startled heart pounding as you desperately search for the lightswitch in the darkness, the light suddenly turns on revealing an old hooded lady.");
                             Console.WriteLine("The lady speaks with a haunting cackle \"You must win in a game of rock paper scissors to earn your freedom... \"");
                             Console.Write("Select an option ROCK, PAPER or SCISSORS: ");
                             string rpsChoice = Console.ReadLine();
-                            int witchSelection = new Random().Next(0, 3);
-
-                            if ()
-                            {
-                                
-                            } */
+                            int witchSelection = new Random().Next(0, 3); */
                             Console.WriteLine("You choose the third key. The door doesn't open.");
                             Console.WriteLine("THE END.");
                             break;
