@@ -180,3 +180,31 @@ og efter den if laver vi en else if hvor spillerens prøver at åbne døren men 
                     break;
             }
         }
+
+for at få en anden tekst farve tilføjer vi i toppen af vores metode (static void Main linjen)
+
+    Console.ForegroundColor = ConsoleColor.Cyan;
+
+og nede i vores switch(playerChoice) kan vi f.eks sætte forskelige farver på hver case
+
+    case "ROCK":
+        if (ghostChoice == "ROCK")
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Its a tie!");
+        }
+        else if (ghostChoice == "PAPER")
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("You lose!");
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("You win!");
+        }
+        break;
+
+for at resete farven kan vi sætte farven i toppen af vores playAgain while loop
+
+    Console.ForegroundColor = ConsoleColor.Cyan;

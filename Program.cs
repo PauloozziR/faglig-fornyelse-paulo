@@ -9,6 +9,7 @@ namespace ChooseYourOwnAdventure
             /* THE MYSTERIOUS NOISE AND THE FRIENDLY BEDROOM GUEST */
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Clear();
+            Console.WriteLine("");
             
             Console.Write("What is your name?: ");
             string playerName = Console.ReadLine();
